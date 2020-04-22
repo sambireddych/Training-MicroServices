@@ -1,0 +1,15 @@
+version: '3'
+networks:
+  default:
+    external:
+      name: localdev_default
+
+services:
+  catalogservice:
+    image: catalogservice
+    hostname: catalogservice
+    container_name: catalogservice
+    environment:
+      - SPRING_PROFILES_ACTIVE=localdev
+    ports:
+    - 127.0.0.1:8085:8080

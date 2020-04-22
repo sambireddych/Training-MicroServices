@@ -1,0 +1,17 @@
+management:
+    metrics:
+        export:
+            statsd:
+                host: training-splunk
+server:
+    port:
+    - 8080
+shipping-service:
+    url: http://catalogservice:8080
+spring:
+    datasource:
+        url: jdbc:h2:mem:testdb
+    rabbitmq:
+        host: training-mq
+    zipkin:
+        base-url: http://training-zipkin:9411/
