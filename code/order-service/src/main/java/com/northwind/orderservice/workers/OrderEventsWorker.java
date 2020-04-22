@@ -12,16 +12,17 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 @Component
-public class ShippingEventsWorker {
+public class OrderEventsWorker {
 
     private ObjectMapper objectMapper = new ObjectMapper();
     private Log logger;
     private OrderService service;
 
-    public ShippingEventsWorker( OrderService service) {
-        this.logger = LogFactory.getLog(ShippingEventsWorker.class);
+    public OrderEventsWorker(OrderService service) {
+        this.logger = LogFactory.getLog(OrderEventsWorker.class);
         this.service = service;
     }
+
 
     @RabbitListener(queues = "shipping-events-orders-service")
     public void receiveEvent(String message) {
