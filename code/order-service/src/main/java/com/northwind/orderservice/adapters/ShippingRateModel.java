@@ -1,13 +1,15 @@
 package com.northwind.orderservice.adapters;
 
-public class ShippingRateModel {
-    private double freight;
+import java.math.BigDecimal;
 
-    public double getFreight() {
+public class ShippingRateModel {
+    private BigDecimal freight;
+
+    public BigDecimal getFreight() {
         return freight;
     }
 
-    public void setFreight(double freight) {
+    public void setFreight(BigDecimal freight) {
         this.freight = freight;
     }
 }

@@ -7,11 +7,13 @@ import com.northwind.orderservice.domain.OrderStatus;
 import javax.persistence.Column;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @JsonSerialize
 public class OrderModel {
     @JsonProperty
-    private long orderNo;
+    private long orderId;
     @JsonProperty
     private long customerId;
     @JsonProperty
@@ -41,12 +43,14 @@ public class OrderModel {
     @JsonProperty
     private long version;
 
-    public long getOrderNo() {
-        return orderNo;
+    @JsonProperty
+    private Set<OrderItemModel> orderItemModelSet = new HashSet<>();
+    public long getOrderId() {
+        return orderId;
     }
 
-    public void setOrderNo(long orderNo) {
-        this.orderNo = orderNo;
+    public void setOrderId(long orderId) {
+        this.orderId = orderId;
     }
 
     public long getCustomerId() {
@@ -71,6 +75,15 @@ public class OrderModel {
 
     public void setCompanyName(String companyName) {
         this.companyName = companyName;
+    }
+
+
+    public Set<OrderItemModel> getOrderItemModelSet() {
+        return orderItemModelSet;
+    }
+
+    public void setOrderItemModelSet(Set<OrderItemModel> orderItemModelSet) {
+        this.orderItemModelSet = orderItemModelSet;
     }
 
     public Date getOrderDate() {

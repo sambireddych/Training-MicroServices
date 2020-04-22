@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix = "shipping-service")
+@ConfigurationProperties(prefix = "shippingservice")
 public class ShippingServiceClientConfig {
     private String url;
 

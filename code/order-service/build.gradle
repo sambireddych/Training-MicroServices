@@ -12,6 +12,10 @@ repositories {
 	mavenCentral()
 }
 
+ext {
+	set('springCloudVersion', "Hoxton.SR1")
+}
+
 dependencies {
 	// Spring Boot Web
 	implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -43,8 +47,20 @@ dependencies {
 	//RabbitMQ
 	implementation 'org.springframework.boot:spring-boot-starter-amqp:2.2.4.RELEASE'
 
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka-server
+	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka-server', version: '1.4.7.RELEASE'
+
+	implementation 'io.springfox:springfox-swagger2:2.9.2'
+	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
 	}
 }
 

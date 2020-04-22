@@ -6,7 +6,6 @@ import com.northwind.customerservice.infrastructure.TraceContext;
 import com.northwind.customerservice.repositories.CustomerRepository;
 import com.northwind.customerservice.repositories.impl.AddressRowMapper;
 import com.northwind.customerservice.repositories.impl.CustomerRowMapper;
-import com.northwind.customerservice.repositories.impl.InMemoryCustomerRepository;
 import com.northwind.customerservice.repositories.impl.MySqlCustomerRepository;
 import com.northwind.customerservice.services.CustomerService;
 import io.micrometer.core.instrument.Clock;

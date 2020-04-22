@@ -1,0 +1,141 @@
+2020-02-07 09:55:50.552  INFO 6364 --- [restartedMain] c.n.s.ShippingserviceApplication         : Starting ShippingserviceApplication on WTLSCHANIMELLA with PID 6364 (C:\Users\schanimella\Desktop\Training-02-04\java-ms-training\code\shippingservice\out\production\classes started by schanimella in C:\Users\schanimella\Desktop\Training-02-04\java-ms-training\code\shippingservice)
+2020-02-07 09:55:50.557 DEBUG 6364 --- [restartedMain] c.n.s.ShippingserviceApplication         : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-07 09:55:50.558  INFO 6364 --- [restartedMain] c.n.s.ShippingserviceApplication         : No active profile set, falling back to default profiles: default
+2020-02-07 09:55:50.632  INFO 6364 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\schanimella\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/schanimella/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/schanimella/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/schanimella/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/schanimella/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/schanimella/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/schanimella/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2020-02-07 09:55:50.633  INFO 6364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-07 09:55:50.634  INFO 6364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-07 09:55:52.388  INFO 6364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-07 09:55:52.770  INFO 6364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 366ms. Found 4 JPA repository interfaces.
+2020-02-07 09:55:53.390  INFO 6364 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-07 09:55:54.424  INFO 6364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8098 (http)
+2020-02-07 09:55:54.654  INFO 6364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-07 09:55:54.655  INFO 6364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-07 09:55:54.977  INFO 6364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-07 09:55:54.977  INFO 6364 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4343 ms
+2020-02-07 09:55:56.799  INFO 6364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-07 09:55:56.935  INFO 6364 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-07 09:55:57.147  INFO 6364 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-07 09:55:57.318  INFO 6364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-07 09:55:57.513  INFO 6364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-07 09:55:57.532  INFO 6364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-07 09:55:58.742  INFO 6364 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-07 09:55:58.751  INFO 6364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-07 09:55:58.768  INFO 6364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-07 09:55:59.630  WARN 6364 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-07 09:55:59.795  INFO 6364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-07 09:56:01.215  INFO 6364 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-02-07 09:56:01.328  INFO 6364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8098 (http) with context path ''
+2020-02-07 09:56:01.331  INFO 6364 --- [restartedMain] c.n.s.ShippingserviceApplication         : Started ShippingserviceApplication in 11.612 seconds (JVM running for 12.893)
+2020-02-07 09:58:09.605  INFO 6364 --- [http-nio-8098-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-07 09:58:09.606  INFO 6364 --- [http-nio-8098-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-07 09:58:09.625  INFO 6364 --- [http-nio-8098-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-02-07 10:30:33.424 ERROR 1116 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:90 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:98 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@9:98 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@10:111 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [layout] of type [ch.qos.logback.contrib.json.classic.JsonLayout] java.lang.ClassNotFoundException: ch.qos.logback.contrib.json.classic.JsonLayout
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@16:81 - no applicable action for [jsonFormatter], current ElementPath  is [[configuration][appender][layout][jsonFormatter]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@17:30 - no applicable action for [prettyPrint], current ElementPath  is [[configuration][appender][layout][jsonFormatter][prettyPrint]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:30 - no applicable action for [timestampFormat], current ElementPath  is [[configuration][appender][layout][timestampFormat]]
+ERROR in org.springframework.amqp.rabbit.logback.AmqpAppender[AMQP] - Either a layout or encoder is required
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [layout] of type [ch.qos.logback.contrib.json.classic.JsonLayout] java.lang.ClassNotFoundException: ch.qos.logback.contrib.json.classic.JsonLayout
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@16:81 - no applicable action for [jsonFormatter], current ElementPath  is [[configuration][appender][layout][jsonFormatter]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@17:30 - no applicable action for [prettyPrint], current ElementPath  is [[configuration][appender][layout][jsonFormatter][prettyPrint]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:30 - no applicable action for [timestampFormat], current ElementPath  is [[configuration][appender][layout][timestampFormat]]
+ERROR in org.springframework.amqp.rabbit.logback.AmqpAppender[AMQP] - Either a layout or encoder is required
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:288)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.northwind.shippingservice.ShippingserviceApplication.main(ShippingserviceApplication.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2020-02-07 10:33:27.542 ERROR 8128 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:90 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:98 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@9:98 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@10:111 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:288)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.northwind.shippingservice.ShippingserviceApplication.main(ShippingserviceApplication.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2020-02-07 10:33:27.604  INFO 8128 --- [pool-4-thread-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: localhost:5672
+2020-02-07 10:33:27.761  INFO 8128 --- [pool-4-thread-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SpringAMQP#3fb07dbc:0/SimpleConnection@79374577 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 50441]
+2020-02-07 10:37:24.724 ERROR 12408 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:90 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:98 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@9:98 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@10:111 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:288)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.northwind.shippingservice.ShippingserviceApplication.main(ShippingserviceApplication.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2020-02-07 10:37:24.760  INFO 12408 --- [pool-4-thread-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: localhost:5672
+2020-02-07 10:37:24.845  INFO 12408 --- [pool-4-thread-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SpringAMQP#6394ae29:0/SimpleConnection@53da40cc [delegate=amqp://admin@127.0.0.1:5672/, localPort= 50560]

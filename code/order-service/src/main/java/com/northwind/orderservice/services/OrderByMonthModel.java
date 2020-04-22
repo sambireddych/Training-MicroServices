@@ -14,8 +14,6 @@ public class OrderByMonthModel {
     @JsonProperty
     private long orderNo;
     @JsonProperty
-    private long customerId;
-    @JsonProperty
     private String customerNo;
     @JsonProperty
     private String companyName;
@@ -59,14 +57,6 @@ public class OrderByMonthModel {
 
     public void setOrderNo(long orderNo) {
         this.orderNo = orderNo;
-    }
-
-    public long getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(long customerId) {
-        this.customerId = customerId;
     }
 
     public String getCustomerNo() {

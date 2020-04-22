@@ -1,20 +1,23 @@
 package com.northwind.orderservice.api;
 
-import ch.qos.logback.core.pattern.util.RegularEscapeUtil;
 import com.northwind.orderservice.domain.Order;
+import com.northwind.orderservice.services.MonthComparisionModel;
+import com.northwind.orderservice.services.OrderByMonthModel;
 import com.northwind.orderservice.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.swing.text.html.Option;
+import java.math.BigDecimal;
 import java.net.URI;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @RestController
-@RequestMapping("/orders")
+@RequestMapping(value = "/orders",produces = "application/json")
 public class OrderController {
     private OrderService service;
 
@@ -23,13 +26,34 @@ public class OrderController {
         this.service = service;
     }
 
-    @GetMapping
+
+    @GetMapping(path = "/orderhistory/{customerId}", params = "month",produces = "application/json")
+    public ResponseEntity<List<OrderByMonthModel>> get(@PathVariable long customerId, @RequestParam String month) {
+        String customerNo = service.findByCustomerId(customerId).get(0).getCustomerNo();
+        if (customerNo.isEmpty() || customerNo == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        List<OrderByMonthModel> allOrders = service.getAllOrders(customerNo, month);
+        return new ResponseEntity<>(allOrders, HttpStatus.OK);
+    }
+
+    @GetMapping(path = "/orderhistory/{customerId}",produces = "application/json")
+    public ResponseEntity<List<MonthComparisionModel>> getByMonth(@PathVariable long customerId) {
+        String customerNo = service.findByCustomerId(customerId).get(0).getCustomerNo();
+        if (customerNo.isEmpty() || customerNo == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(service.getDataByMonths(customerNo), HttpStatus.OK);
+    }
+
+    @GetMapping(produces = "application/json")
     public ResponseEntity<List<OrderModel>> get(
-            @RequestParam(required = false)Optional<Integer> offset,
-            @RequestParam(required = false)Optional<Integer> limit) {
+            @RequestParam(required = false) Optional<Integer> offset,
+            @RequestParam(required = false) Optional<Integer> limit) {
 
         List<OrderModel> orders = service.getAll(offset.orElse(0), limit.orElse(10))
-                .stream().map(o->OrderMapper.toModel(o))
+                .stream().map(o -> OrderMapper.toModel(o))
                 .collect(Collectors.toList());
 
         return ResponseEntity.ok(orders);

@@ -1,5 +1,7 @@
 package com.northwind.orderservice.adapters;
 
+import java.math.BigDecimal;
+
 public interface ShippingServiceClient {
-    double getFreightAmount(String country);
+    BigDecimal getFreightAmount(String country);
 }

@@ -1,0 +1,15 @@
+version: '3'
+networks:
+  default:
+    external:
+      name: localdev_default
+
+services:
+  shipping:
+    image: shippingservice
+    hostname: shippingservice
+    container_name: shippingservice
+    environment:
+      - SPRING_PROFILES_ACTIVE=localdev
+    ports:
+    - 127.0.0.1:8083:8086
